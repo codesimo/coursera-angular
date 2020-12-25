@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lunch list</title>
+    <script src="../angular.min.js"></script>
+    <script src='app.js'></script>
+</head>
+<body ng-app="LunchCalculator">
+    <h1>Lunch Calculator</h1>
+    <div ng-controller="LunchCalculatorController">
+        <div>
+            Insert a comma separated list of food:
+            <input type="text" ng-model = "foodList">
+            <button ng-click="getMessage()">Check If Too Much</button>
+        </div>
+        <div>{{message}}</div>  
+    </div>
+</body>
+</html>
